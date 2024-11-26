@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="bg-gray-900 p-8 rounded-lg shadow-lg overflow-hidden">
+    <!-- Project Thumbnail -->
+        <div class="img">
+            <img src="{% static 'img/portfolio.png' %}" alt="" class=" object-cover ">
+        </div>
+  
+    <!-- Project Overview and Features -->
+    <div class="text-gray-300 space-y-4 mb-6">
+      <h4 class="text-xl text-yellow-300 font-bold">Project Overview:</h4>
+      <p class=" text-white leading-relaxed font-bold text-2xl">
+        Welcome to my personal portfolio, where I highlight the most significant projects I've worked on. From designing responsive websites and web applications to developing machine learning models and AI solutions, this portfolio represents the core of my technical journey. Each project is carefully crafted to provide users with an interactive and seamless experience. Here, you can explore the tools and technologies I have mastered, such as Python, Django, Flask, AI/ML algorithms, and modern frontend frameworks.
+      </p>
+    </div>
+  
+    <!-- Key Features (Bullet Points) -->
+    <div class="mb-6">
+      <h4 class="text-xl text-yellow-300 font-semibold mb-3">Key Features of My Portfolio:</h4>
+      <ul class="list-disc list-inside text-gray-200 font-bold text-2xl">
+        <li>Professional web development projects, including full-stack applications and dynamic websites.</li>
+        <li>Python-based applications that demonstrate expertise in data analysis, automation, and backend development.</li>
+        <li>AI/ML projects showcasing real-world applications such as predictive models and data-driven solutions.</li>
+        <li>Responsive design ensuring accessibility across devices, from mobile to desktop.</li>
+        <li>Clean, user-friendly interfaces built using modern frontend technologies like HTML5, CSS3, and JavaScript.</li>
+      </ul>
+    </div>
+  
+    <!-- View Project Button -->
+    <div class="text-center">
+      <a
+        href="/"
+        class="py-3 px-6  bg-yellow-600 text-white font-semibold rounded-full shadow-md hover:bg-yellow-400 transition-all text-lg"
+      >
+        Back to Home
+      </a>
+    </div>
+  </div>
+  
+</body>
+</html>

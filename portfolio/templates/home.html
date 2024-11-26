@@ -1,0 +1,635 @@
+
+{% load static tailwind_tags %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    {% tailwind_css %}
+  </head>
+  <body>
+   
+      <!-- HEADER DESIGN -->
+       
+          <nav id="navbar" class="flex fixed top-0 left-0 w-full items-center justify-between px-4 md:px-10 py-4 bg-gray-900 text-yellow-200 shadow-md transition-colors duration-300 z-50">
+            <!-- Logo Section -->
+            <div class="text-5xl font-extrabold">
+              <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-50 via-purple-50 to-teal-50">
+                PORTFOLIO....
+              </span>
+            </div>
+          
+            <!-- Navigation Links -->
+            <ul  class="hidden md:flex items-center gap-6 md:gap-8 text-sm md:text-lg font-medium">
+              <li>
+                <a href="#home1" class="text-white hover:text-yellow-400 hover:underline">HOME</a>
+              </li>
+              <li>
+                <a href="#about" class="text-white hover:text-yellow-400 hover:underline">ABOUT</a>
+              </li>
+              <li>
+                <a href="#project" class="text-white hover:text-yellow-400 hover:underline">PROJECT</a>
+              </li>
+              <li>
+                <a href="#certification" class="text-white hover:text-yellow-400 hover:underline">CERTIFICATION</a>
+              </li>
+              <li>
+                <a href="#contact" class="text-white hover:text-yellow-400 hover:underline">CONTACT</a>
+              </li>
+              <a href="{% static 'img/resume.png' %}" download class="py-2 px-4 md:px-6 bg-yellow-600 text-white font-semibold rounded-full shadow-md hover:bg-yellow-500">
+                Download CV
+              </a>
+            </ul>
+        
+      <!-- scroll button start -->
+
+      <button id="scrollToHome" class="py-2 px-6 bg-yellow-600 text-white font-semibold rounded-full shadow-md hover:bg-yellow-500 fixed bottom-10 right-10 z-50">
+        <i class="fa-sharp fa-solid fa-arrow-up "></i>
+      </button>
+
+      
+
+       <!-- scroll button end -->
+    
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="focus:outline-none">
+          <i class="fas fa-bars text-2xl text-yellow-200"></i>
+        </button>
+      </div>
+    </nav>  
+</div>
+    <!-- END HEADER DESIGN -->
+
+ 
+    <div id="home1" class="header pt-32 bg-gray-900 text-white flex items-center justify-center px-4 md:px-10 lg:px-28">
+      <div class="container mx-auto min-h-screen grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-8">
+        <!-- Main Content -->
+        <div class="main-content space-y-4">
+          <h3 class="font-bold md:text-4xl text-yellow-200">Hi, I'm</h3>
+          <h1 class="text-3xl md:text-5xl font-bold text-white">Sandeep Daki</h1>
+          <h1 class="text-yellow-300">
+            <a href="#" class="typewrite text-4xl" data-period="2000" data-type='["I AM PYTHON FULLSTACKDEVELOPER"]'>
+              <span class="wrap"></span>
+            </a>            
+            <h3 class="text-sm md:text-lg font-bold text-white"><span class=" text-2xl font-bold">i</span>nnovative and detail-oriented Python Developer with a strong foundation in programming and web development. Adept at tackling complex challenges with creative solutions, and passionate about learning advanced technical skills to drive impactful projects. Committed to continuous learning and eager to contribute to dynamic teams with a focus mindset.</h3>
+          </h1>
+    
+          <!-- Social Media Icons -->
+          <div class="social-media">
+            <ul class="flex gap-6 text-4xl">
+              <a href="#" class="pb-4 text-yellow-400 hover:text-yellow-200 transition-transform duration-300 transform hover:scale-110">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="#" class="pb-4 text-yellow-400 hover:text-yellow-200 transition-transform duration-300 transform hover:scale-110">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </ul>
+          </div>
+    
+          <!-- Call to Action Button -->
+          <div class="resume-btn">
+            <a href="" download class="py-2 px-4 md:px-6 bg-yellow-600 text-white font-semibold rounded-full shadow-md hover:bg-yellow-500 hover:shadow-lg transition-all duration-300">
+              Download CV
+            </a>
+          </div>
+
+          
+        </div>
+    
+        <!-- Profile Image -->
+       <div class="my-img flex justify-center md:justify-end">
+    <img src="{% static 'img/cartoon img.png' %}" alt="Profile Picture" class="w-60 h-60 md:w-80 md:h-80 rounded-full border-4 border-pink-500 about-img object-cover" />
+</div>
+
+        
+        
+        
+                
+      </div>
+    </div>
+    <!-- MAIN CONTENT END -->
+    
+    <!-- ABOUT ME START -->
+    <div id="about" class="about min-h-screen flex items-center justify-center bg-gray-900 text-white py-16 px-4 lg:px-16">
+      <div class="container mx-auto flex flex-col lg:flex-row items-center gap-12">
+    
+        <!-- Profile Image and Skills Section -->
+        <div class="my-img flex flex-col items-center lg:items-start lg:w-1/3">
+          <img src="{% static 'img/cartoon img.png' %}" alt="Profile Picture" class=" w-32 h-32 sm:w-40 sm:h-40 lg:w-56 lg:h-56 rounded-full border-4 border-pink-500 about-img object-cover mb-6" />
+    
+          <!-- Progress Bars for Skills Section -->
+          <div class="skills w-3/4 sm:w-full">
+            <!-- HTML Skill -->
+            <div class="skill">
+              <div class="flex justify-between mb-1 ">
+                <span class="text-sm sm:text-base font-bold">HTML</span>
+                <span class="text-xs sm:text-sm font-bold">70%</span>
+              </div>
+              <div class="w-full bg-gray-700 rounded-full h-2 mb-4">
+                <div class="bg-blue-600 h-2 rounded-full transition-all duration-700" style="width: 70%"></div>
+              </div>
+            </div>
+    
+            <!-- Repeat for each skill -->
+            <div class="skill">
+              <div class="flex justify-between mb-1 ">
+                <span class="text-sm sm:text-base font-bold">CSS</span>
+                <span class="text-xs sm:text-sm font-bold">70%</span>
+              </div>
+              <div class="w-full bg-gray-700 rounded-full h-2 mb-4">
+                <div class="bg-blue-600 h-2 rounded-full transition-all duration-700" style="width: 70%"></div>
+              </div>
+            </div>
+    
+            <!-- Python Skill -->
+            <div class="skill">
+              <div class="flex justify-between mb-1 ">
+                <span class="text-sm sm:text-base font-bold">Python</span>
+                <span class="text-xs sm:text-sm font-bold">70%</span>
+              </div>
+              <div class="w-full bg-gray-700 rounded-full h-2 mb-4">
+                <div class="bg-blue-600 h-2 rounded-full transition-all duration-700" style="width: 70%"></div>
+              </div>
+            </div>
+    
+            <!-- Django Skill -->
+            <div class="skill">
+              <div class="flex justify-between mb-1 ">
+                <span class="text-sm sm:text-base font-bold">Django</span>
+                <span class="text-xs sm:text-sm font-bold">70%</span>
+              </div>
+              <div class="w-full bg-gray-700 rounded-full h-2 mb-4">
+                <div class="bg-blue-600 h-2 rounded-full transition-all duration-700" style="width: 70%"></div>
+              </div>
+            </div>
+                    <!-- javascript skills -->
+        <div class="skill">
+          <div class="flex justify-between mb-1 ">
+            <span class="text-sm sm:text-base font-bold">JavaScript</span>
+            <span class="text-xs sm:text-sm font-bold text-white">70%</span>
+          </div>
+          <div class="w-full bg-gray-700 rounded-full h-2 mb-4">
+            <div class="bg-blue-600 h-2 rounded-full transition-all duration-700" style="width: 70%"></div>
+          </div>
+        </div>
+        <!-- javascript skills -->
+        <!-- github skils -->
+        <div class="skill">
+          <div class="flex justify-between mb-1">
+            <span class="text-sm sm:text-base font-bold text-white">GitHub</span>
+            <span class="text-xs sm:text-sm font-bold text-white">70%</span>
+          </div>
+          <div class="w-full bg-gray-700 rounded-full h-2 mb-4">
+            <div class="bg-blue-600 h-2 rounded-full transition-all duration-700" style="width: 70%"></div>
+          </div>
+        </div>
+        <!-- github skilss -->
+         <!-- github skils -->
+        <div class="skill">
+          <div class="flex justify-between mb-1 text-yellow-300">
+            <span class="text-sm sm:text-base text-white font-bold">SQL</span>
+            <span class="text-xs text-white sm:text-sm font-bold">70%</span>
+          </div>
+          <div class="w-full bg-gray-700 rounded-full h-2 mb-4">
+            <div class="bg-blue-600 h-2 rounded-full transition-all duration-700" style="width: 70%"></div>
+          </div>
+        </div>
+        <!-- github skilss -->
+          </div>
+        </div>
+
+
+
+    
+        <!-- About Content Section -->
+        <div class="about-content lg:w-2/3 text-center lg:text-left">
+          <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-6">ABOUT <span class="text-yellow-400">ME</span></h1>
+          <p class="text-lg lg:text-xl mb-6">
+            <span class=" text-lg font-bold">Hi, I'm Sandeep Daki, a passionate Full Stack Developer specializing in Python and Django, with experience in building user-focused and efficient web applications. <span class="text-yellow-300 font-bold">I recently completed a 6-month internship </span> where I honed my skills in back-end and front-end development, creating functional, responsive web solutions.</span>
+          </p>
+          
+          <!-- Experience and Education Section as Medals -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+            <!-- Experience Medal -->
+            <div class="bg-gray-800 p-6 rounded-md shadow-lg flex flex-col items-center hover:shadow-xl transition-shadow duration-300">
+              <div class="text-5xl mb-4 text-yellow-500">🧑‍💼</div>
+              <h3 class="text-xl text-yellow-300 font-bold mb-2">EXPERIENCE</h3>
+              <p class="text-sm lg:text-base text-center font-bold">
+                Full Stack Developer with hands-on experience from a six-month internship, building responsive applications with a blend of back-end and front-end development.
+              </p>
+            </div>
+    
+            <!-- Education Medal -->
+            <div class="bg-gray-800 p-6 rounded-md shadow-lg flex flex-col items-center hover:shadow-xl transition-shadow duration-300">
+              <div class="text-5xl mb-4 text-yellow-500">🎓</div>
+              <h3 class="text-xl text-yellow-300 font-bold mb-2">EDUCATION</h3>
+              <p class="text-sm lg:text-base text-center font-bold">
+                Pursuing a degree in Computer Applications, focusing on a solid foundation in software development and web technologies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT ME END -->
+    
+<!-- ABOUT ME END -->
+
+
+
+  
+
+
+    <!-- ABOUT ME END -->
+
+
+<!--PROJECT SECTION START--> 
+<!-- PROJECTS SECTION START -->
+<div id="project" class="projects bg-gray-900 py-16">
+  <div class="container mx-auto px-4 lg:px-16 mb-44">
+      <h2 class="text-4xl font-bold text-white text-center mb-8">MY <span class="text-yellow-200">PROJECTS</span></h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Card 1 -->
+          <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+              <img src="{% static 'img/templates_4.png' %}" alt="Project 1" class="w-full h-60 object-cover" />
+              <div class="p-4">
+                  <h3 class="text-2xl font-bold  text-yellow-200">weather</h3>
+                  <p class="text-white mt-2 font-bold">"Weather website providing real-time weather updates for any location, featuring a search bar, responsive design, and API integration."
+                  </p>
+                  <div class="mt-4">
+                      <span class="text-white font-bold">Technologies:</span> 
+                      <span class="text-yellow-200">HTML5  ,  CSS3  ,  JAVASCRIPT  ,  API</span>
+                  </div>
+                  <a href="{% url 'wheter' %}" class="mt-4 inline-block bg-yellow-600 text-white rounded-full px-4 py-2 hover:bg-blue-700 transition font-bold">View Project</a>
+              </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+              <img src="{% static 'img/portfolio.png' %}" alt="Project 2" class="w-full h-60 object-cover   " />
+              <div class="p-4">
+                  <h3 class="text-2xl font-bold text-yellow-200">portfolio</h3>
+                  <p class="font-bold text-white mt-2">"Personal portfolio showcasing skills, projects, and achievements with user-friendly navigation."</p>
+                  <div class="mt-4">
+                      <span class="text-white font-bold">Technologies:</span> 
+                      <span class="text-yellow-200">DJANGO, TAILWIND, SQL , HTML5, CSS3, JAVASCRIPT  </span>
+                      
+                  </div>
+                  <a href="{% url 'portfolio' %}" class="mt-4 inline-block bg-yellow-600 text-white rounded-full px-4 py-2 hover:bg-blue-700 transition font-bold">View Project</a>
+              </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+              <img src="{% static 'img/realsate.png' %}" alt="Project 3" class="w-full h-60 object-cover" />
+              <div class="p-4">
+                  <h3 class="text-2xl font-bold text-yellow-200">realstate</h3>
+                  <p class="font-bold text-white mt-2">"Real estate website offering property listings, search filters, and detailed information with a responsive."</p>
+                  <div class="mt-4">
+                      <span class="text-white font-bold">Technologies:</span> 
+                      <span class="text-yellow-200">DJANGO, TAILWIND, SQL , HTML5, CSS3, JAVASCRIPT </span>
+                      
+                  </div>
+                  <a href="link-to-live-project-3" class="mt-4 inline-block bg-yellow-600 text-white rounded-full px-4 py-2 hover:bg-blue-700 transition font-bold">View Project</a>
+              </div>
+          </div>
+          <!-- project card 4 -->
+          <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+            <img src="{% static 'img/template_1.png' %}" alt="Project 3" class="w-full h-48 object-cover" />
+            <div class="p-4">
+                <h3 class="text-2xl font-bold text-yellow-200">hosting</h3>
+                <p class="font-bold text-white mt-2">"clean design, showcasing hosting plans, features,and responsive layout for professional presentations." </p>
+                <div class="mt-4">
+                    <span class="text-white font-bold">Technologies:</span> 
+                    <span class="text-yellow-200">JAVASCRIPT, HTML5, CSS3, TAILWIND</span>
+                </div>
+                <a href="link-to-live-project-3" class="mt-4 inline-block bg-yellow-600 text-white rounded-full px-4 py-2 hover:bg-blue-700 transition font-bold">View Project</a>
+            </div>
+         </div>
+
+         <!-- project card 5 -->
+         <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+          <img src="{% static 'img/templates_2.png' %}" alt="Project 3" class="w-full h-48 object-cover" />
+          <div class="p-4">
+              <h3 class="text-2xl font-bold text-yellow-200">web hosting</h3>
+              <p class="font-bold text-white mt-2">"Responsive web hosting templates  pricing tables, and service highlights for hosting businesses."</p>
+              <div class="mt-4">
+                  <span class="text-white font-bold">Technologies:</span> 
+                  <span class="text-yellow-200">JAVASCRIPT, HTML5, CSS3, TAILWIND</span>
+              </div>
+              <a href="link-to-live-project-3" class="mt-4 inline-block bg-yellow-600 text-white rounded-full px-4 py-2 hover:bg-blue-700 transition font-bold">View Project</a>
+          </div>
+       </div>
+
+       <!-- project card 6 -->
+       <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+        <img src="{% static 'img/templates_3.png' %}" alt="Project 3" class="w-full h-48 object-cover" />
+        <div class="p-4">
+            <h3 class="text-2xl font-bold text-yellow-200">black coffee</h3>
+            <p class="font-bold text-white mt-2">"Black Coffee website with a minimalist design premium coffee responsive user experience."</p>
+            <div class="mt-4">
+                <span class="text-white font-bold">Technologies:</span> 
+                <span class="text-yellow-200">JAVASCRIPT, HTML5, CSS3, TAILWIND</span>
+            </div>
+            <a href="link-to-live-project-3" class="mt-4 inline-block bg-yellow-600 text-white rounded-full px-4 py-2 hover:bg-blue-700 transition font-bold">View Project</a>
+        </div>
+     </div>
+
+          
+
+          
+
+          <!-- Add more project cards as needed -->
+      </div>
+  </div>
+</div>
+<!-- PROJECTS SECTION END -->
+
+<!-- Certification Section start -->
+<section id="certification" class="py-20 bg-gray-800 text-white">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-8">Certifications</h2>
+    <p class="text-lg mb-12 text-yellow-200 font-bold">Here are some of the certifications I have earned to enhance my skills and knowledge.</p>
+    
+    <!-- Certification Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+        <img src="{% static 'img/python.png' %}"" alt="Certification 2" class="w-full h-40 object-cover rounded-t-lg mb-4"></img>
+        <h3 class="text-xl font-semibold mb-2">Python Developer Certificate</h3>
+        <p class="text-sm mb-4 font-bold">"Earned <span class="text-xl font-bold text-yellow-200">INFOSYS</span>  this
+        certification covers core Python programming concepts, object-oriented
+        programming, and data structures.".</p>
+        <a href="{% static 'img/python.png' %}" download class="py-2 px-4 md:px-6 bg-yellow-600 text-white font-semibold rounded-full shadow-md hover:bg-yellow-500 transition-transform duration-300 transform hover:scale-110">
+          view Certifica...
+        </a>
+      </div>
+  
+      <!-- Certification 2 -->
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+        <img src="{% static 'img/AI.png' %}"" alt="Certification 2" class="w-full h-40 object-cover rounded-t-lg mb-4"></img>
+        <h3 class="text-xl font-semibold mb-2">artificial intelligence</h3>
+        <p class="text-sm mb-4 font-bold">"Earned <span class="text-xl font-bold text-yellow-200">INFOSYS</span> AI certificate, highlighting knowledge in machine learning, algorithms, data processing, and AI-driven solutions".</p>
+        <a href="{% static 'img/ai.png' %}" download class="py-2 px-4 md:px-6 bg-yellow-600 text-white font-semibold rounded-full shadow-md hover:bg-yellow-500 transition-transform duration-300 transform hover:scale-110">
+          view Certifica...
+        </a>
+      </div>
+
+      <!-- Certification 3 -->
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+        <img src="{% static 'img/JAVASCRIPT.png' %}"" alt="Certification 3" class="w-full h-40 object-cover rounded-t-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">JavaScript Development</h3>
+        <p class="text-sm mb-4 font-bold">"Earned <span class="text-xl font-bold text-yellow-200">INFOSYS</span>  JavaScript certificate, showcasing expertise in dynamic web development, functional programming.</p>
+        <a href="{% static 'img/javascript.png' %}" download class="py-2 px-4 md:px-6 bg-yellow-600 text-white font-semibold rounded-full shadow-md hover:bg-yellow-500 transition-transform duration-300 transform hover:scale-110">
+          view Certifica...
+        </a>
+      </div>
+
+      <!-- cettificaton 4 -->
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+        <img src="{% static 'img/sql.png' %}"" alt="Certification 4" class="w-full h-40 object-cover rounded-t-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">sql database</h3>
+        <p class="text-sm mb-4 font-bold ">"Achieved  <span class="text-xl font-bold text-yellow-200">INFOSYS</span>  SQL Database certificate, demonstrating proficiency in database design, queries for effective data analysis and manipulation.".</p>
+        <a href="{% static 'img/sql.png' %}" download class="py-2 px-4 md:px-6 bg-yellow-600 text-white font-semibold rounded-full shadow-md hover:bg-yellow-500 transition-transform duration-300 transform hover:scale-110">
+          view Certifica...
+        </a>
+      </div>
+
+      <!-- certification 5 -->
+      <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+        <img src="{% static 'img/css3.png' %}"" alt="Certification 5" class="w-full h-40 object-cover rounded-t-lg mb-4"></img>
+        <h3 class="text-xl font-semibold mb-2">JavaScript Development</h3>
+        <p class="text-sm mb-4 font-bold">"Earned <span class="text-xl font-bold text-yellow-200">INFOSYS</span>  CSS3 certificate, demonstrating expertise in responsive web design and all new feactures  modern styling techniques for friendly styling."</p>
+        <a href="{% static 'img/css3.png' %}" download class="py-2 px-4 md:px-6 bg-yellow-600 text-white font-semibold rounded-full shadow-md hover:bg-yellow-500 transition-transform duration-300 transform hover:scale-110">
+          view Certifica...
+        </a>
+      </div>
+
+      
+
+    </div>
+  </div>
+</section>
+
+<!-- certificaton section end -->
+
+
+
+
+
+
+
+
+<!-- CONTACT SECTION START -->
+<div id="contact" class="contact bg-gray-900 flex items-center justify-center min-h-screen">
+  <div class="w-full max-w-lg bg-gray-800 rounded-lg shadow-lg p-8">
+      <h2 class="text-3xl font-bold text-yellow-300 mb-6 text-center">Contact Us</h2>
+      <form method="POST">
+        {% csrf_token %}
+          <!-- Name Field -->
+          <div class="mb-4">
+              <label for="name" class="block text-white font-semibold">Name</label>
+              <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+          </div>
+
+          <!-- Email Field -->
+          <div class="mb-4">
+              <label for="email" class="block text-white font-semibold">Email</label>
+              <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+          </div>
+
+          <!-- Message Field -->
+          <div class="mb-4">
+              <label for="message" class="block text-white font-semibold">Message</label>
+              <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500" required></textarea>
+          </div>
+
+          <!-- Submit Button -->
+           
+          <div class="text-center">
+              <button type="submit" class="px-6 py-2 bg-yellow-300 text-gray-800 font-semibold rounded-md hover:bg-yellow-500 transition-colors duration-300">Send Message</button>
+          </div>
+      </form>
+  </div>
+</div>
+
+
+
+
+ <!-- CONTACT SECTION END -->
+
+
+ <!-- AFTER CONATCT PAGE WRITIG -->
+ 
+ 
+ <!-- CREATED BY SECTION START -->
+<div class="created-by bg-gray-800 py-8">
+  <div class="container mx-auto px-4 lg:px-16 text-center">
+      <p class="text-gray-400 mb-2">Created by <span class="text-yellow-200 font-bold">@Sandeep Daki</span></p>
+      <div class="flex justify-center gap-6">
+          <a href="https://www.linkedin.com/in/your-profile-link" class="text-yellow-200 hover:text-yellow-400" target="_blank">LinkedIn</a>
+          <a href="https://github.com/your-github-username" class="text-yellow-200 hover:text-yellow-400" target="_blank">GitHub</a>
+          <a href="https://your-portfolio-link.com" class="text-yellow-200 hover:text-yellow-400" target="_blank">Portfolio</a>
+      </div>
+  </div>
+</div>
+<!-- CREATED BY SECTION END -->
+
+
+  <!-- AFTER CONATCT PAGE WRITIG END-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+
+    // type writer start 
+    class TypeWriter {
+      constructor(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+      }
+  
+      tick() {
+        const i = this.loopNum % this.toRotate.length;
+        const fullTxt = this.toRotate[i];
+  
+        this.txt = this.isDeleting
+          ? fullTxt.substring(0, this.txt.length - 1)
+          : fullTxt.substring(0, this.txt.length + 1);
+  
+        this.el.innerHTML = `<span class="wrap">${this.txt}</span>`;
+  
+        let delta = 200 - Math.random() * 100;
+  
+        if (this.isDeleting) { delta /= 2; }
+  
+        if (!this.isDeleting && this.txt === fullTxt) {
+          delta = this.period;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+        }
+  
+        setTimeout(() => this.tick(), delta);
+      }
+    }
+  
+    window.onload = function () {
+      const elements = document.getElementsByClassName('typewrite');
+      for (let i = 0; i < elements.length; i++) {
+        const toRotate = elements[i].getAttribute('data-type');
+        const period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TypeWriter(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+    };
+
+    // type writer end 
+
+
+    // scroll button start
+    // Get the button and home section
+      const scrollToHomeButton = document.getElementById("scrollToHome");
+      const homeSection = document.getElementById("home1");
+
+      // Add click event to the button
+      scrollToHomeButton.addEventListener("click", function() {
+        // Scroll to the home section smoothly
+        homeSection.scrollIntoView({ behavior: "smooth" });
+      });
+
+    // scroll button end 
+
+
+    function viewCertificate(src) {
+      const modal = document.getElementById("certificateModal");
+      const frame = document.getElementById("certificateFrame");
+      frame.src = src; // Set the source of the iframe dynamically
+      modal.classList.remove("hidden");
+    }
+  
+    // Close the modal
+    function closeModal() {
+      const modal = document.getElementById("certificateModal");
+      const frame = document.getElementById("certificateFrame");
+      modal.classList.add("hidden");
+      frame.src = ""; // Clear the iframe source to stop loading
+    }
+    
+    
+  </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

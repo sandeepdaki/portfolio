@@ -1,0 +1,76 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="{% static 'style.css' %}" />
+    
+
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+      <link
+        href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+        rel="stylesheet"
+      />
+      
+
+    
+</head>
+<body>
+      
+    
+    <div class="bg-gray-900 p-6 rounded-lg shadow-lg ">
+        <!-- Project Thumbnail -->
+        <img
+          src="{% static 'img/templates_4.png' %}"
+          alt="Weather App Project"
+          class="w-96 h-96 rounded-t-lg mb-4 ml-96 "
+        />
+        <!-- Project Title -->
+        <h3 class="text-xl text-yellow-200 mb-2 font-bold ">
+          Weather App Project
+        </h3>
+        <!-- Project Description -->
+        <p class="text-sm mb-4 text-white font-bold ">
+          The Weather App provides accurate, real-time weather updates for any location, offering detailed information about the current weather conditions, forecasts, and temperature. This project integrates the OpenWeather API for reliable and up-to-date weather data. Developed using Python and Flask for the backend, it features a responsive frontend built with Bootstrap to deliver a smooth user experience.
+        </p>
+        
+        <!-- Key Features (Bullet Points) -->
+        <ul class="text-sm mb-4 text-gray-200 list-disc pl-5 font-bold">
+          <li>Real-time weather updates fetched from the OpenWeather API.</li>
+          <li>Displays current temperature, humidity, wind speed, and weather condition.</li>
+          <li>Forecast for the next 5 days with detailed daily weather data.</li>
+          <li>Search functionality to get weather details for any city worldwide.</li>
+          <li>Responsive design for mobile and desktop, ensuring accessibility on all devices.</li>
+          <li>Built with Python (Flask) for seamless backend functionality.</li>
+          <li>Frontend designed using Bootstrap for a clean and modern user interface.</li>
+          <li>Search functionality to get weather details for any city worldwide.</li>
+          <li>Responsive design for mobile and desktop, ensuring accessibility on all devices.</li>
+          <li>Built with Python (Flask) for seamless backend functionality.</li>
+          
+        </ul>
+    
+        <!-- View Project Button -->
+        <a 
+        
+          href="/"
+          class="py-2 px-4 md:px-6 bg-yellow-600 text-white font-semibold rounded-full shadow-md hover:bg-yellow-400 transition-all"
+        >
+          back to home
+      </a >
+    </div>
+    
+      
+    
+</body>
+</html>

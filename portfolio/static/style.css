@@ -1,0 +1,184 @@
+/* google font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+
+
+
+
+/* about section start */
+
+
+/* NAVBAR START */
+
+/* NAVBAR END */
+
+.about-contant-3{
+  font-family: "Prociono", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.skills{
+    
+    font-family: "Prociono", serif;
+    font-weight: 400;
+    font-style: normal;
+      
+}
+
+
+/* about section end */
+
+.shadow-yellow {
+    box-shadow: 0 4px 10px rgba(38, 5, 184, 0.6); /* Adjust color and transparency */
+}
+
+.about-img{
+    box-shadow: 0 4px 10px rgb(224, 196, 58)
+}
+
+.shadow-yellow-custom {
+    box-shadow: 0 0 8px 2px rgba(253, 224, 71, 0.6); /* Yellow shadow with some transparency */
+}
+
+/* .about{
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+
+} */
+
+
+/* Primary Background */
+/* .about {
+    background-color: #1e1b29;
+} */
+
+/* Section Backgrounds */
+
+
+/* Text and Highlight Colors */
+.text-base, .text-lg, .text-xl, .text-2xl {
+    color: #f1f1f1;
+}
+
+h1, .text-yellow-200 {
+    color: #ffd700; /* Highlight color */
+}
+
+/* Skill Bars */
+.about-img {
+    border-color: #ffd700; /* Yellow border around profile image */
+}
+
+.processbar .bg-blue-600 {
+    background-color: #f06529; /* Adjust each skill color as shown below */
+}
+
+/* Specific Skill Colors */
+.bg-html { background-color: #f06529; }
+.bg-css { background-color: #264de4; }
+.bg-js { background-color: #f7df1e; }
+.bg-python { background-color: #306998; }
+.bg-django { background-color: #092e20; }
+.bg-tailwind { background-color: #38b2ac; }
+.bg-github { background-color: #6e5494; }
+
+
+
+/* PROCESSBAR MEDIA QUARY START */
+
+@media (max-width: 640px) { /* For screens smaller than 640px (tailored for mobile) */
+    .processbar {
+        width: 90%;
+         /* Increase width to 90% on mobile */
+    }
+
+    /* Optional: Increase height of the progress bars for better visibility on small screens */
+    .processbar .w-full .h-2 {
+        height: 4px; /* Adjust as needed */
+    }
+}
+
+/* PROCESSBAR MEDIA QUARY END  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes typewriter {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+/* Cursor blink animation */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Typewriter effect class */
+.animate-typewriter {
+    display: inline-block; /* Allow width adjustment */
+    animation: typewriter 2.5s steps(30) forwards; /* Increased duration and steps for smoother effect */
+    overflow: hidden; /* Ensures overflow is hidden */
+    border-right: 2px solid transparent; /* Transparent initially for cursor */
+}
+
+/* Cursor styling */
+.cursor {
+    height: 1.5em; /* Adjust height to match text */
+    animation: blink 0.7s step-start infinite; /* Blink effect for cursor */
+}
+
+/* Reveal the cursor at the end of typing */
+.typewriter-text {
+    display: inline-block; /* Allow for dynamic width */
+    width: 0; /* Start hidden */
+    overflow: hidden; /* Hide text overflow */
+    animation: typewriter 2.5s steps(30) forwards; /* Match duration with the main animation */
+}
+
+.animate-typewriter .cursor {
+    animation-delay: 2.5s; /* Start cursor blink after typing */
+    border-right-color: #9f7aea; /* Change cursor color to purple */
+}
+
+
+.main-content p{
+    font-family: "Oxanium", sans-serif;
+}
+
+
+
+/* CONTACT SECTION START  */
+
+/* CONTACT SECTION END  */
